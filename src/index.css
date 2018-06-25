@@ -7,18 +7,19 @@ body {
 .app {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .mapContainer {
+  width: 40%;
   padding-top: 2em; 
   padding-left: 2em;
+  background-color: lightblue;
 }
 
 .quakeContainer {
+  width: 40%;
   padding-top: 2em; 
   padding-right: 2em;
+  background-color: pink;
 }
-
-ul {list-style: none}
-
