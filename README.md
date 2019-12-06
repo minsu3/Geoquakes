@@ -2,9 +2,9 @@
 
 ## Introduction
 
-> ***Note:*** *This is a pair programming activity! You must work with a partner on this project! There are many pieces that could trip you up, so having two pairs of eyes and two brains on one set of code will be an important tactic to minimize errors and generate ideas.*
+> ***Note:*** *This is a pair programming activity! While in class, you must work with a partner on this project! There are many pieces that could trip you up, so having two pairs of eyes and two brains on one set of code will be an important tactic to minimize errors and generate ideas.*
 
-In this training, we attempt to put together much of the work from this week as well as the last. We'll be using axios functions to make calls to a third party API.  We will be using live data from the USGS (United States Geological Survey), specifically a data set showing significant earthquakes (M4.0 or greater) from the past week.
+In this training, we attempt to put together much of the work from this week as well as the last. We'll be using Fetch to make calls to a third party API.  We will be using live data from the USGS (United States Geological Survey), specifically a data set showing significant earthquakes (M4.0 or greater) from the past week.
 
 ![](https://media.giphy.com/media/3o7bubiK9vDtxXCOgU/giphy.gif)
 
@@ -80,6 +80,7 @@ Once you've got the map to show up, your next goal is to drop a single pin on yo
 - Next, can you add only the first earthquake to the map?
 - Can you add pins for *all* the earthquakes to the map?
 - Finally, can you replace the pin with the `earthquake.png` icon?
+
 
 #### Bonus:
 Extend your template:  
