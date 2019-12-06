@@ -11,7 +11,7 @@ In this training, we attempt to put together much of the work from this week as 
 ## Objectives
 
 Developers will be able to:
-- Use Axios to grab data from the USGS earthquakes API
+- Use Fetch to grab data from the USGS earthquakes API
 - Use the Google Maps API to embed a map
 
 ## GeoQuakes
