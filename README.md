@@ -36,7 +36,7 @@ If your partner forked the repository originally, you should fork their reposito
 ## Instructions
 
 #### Part 1. Rendering Data
-Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson).
+Take a moment to familiarize yourself with the dataset by opening it in your browser: [https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson).
 
 + What is the structure of the data?
     + How many earthquakes does it list?
