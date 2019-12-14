@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MapContainer from './MapContainer'
 
+const SOURCE_URL= 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson';
+
 class App extends Component {
 
   state = {
@@ -8,7 +10,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson')
+    fetch(SOURCE_URL)
       //parse into json
       .then(response=> response.json())
       //Use arrow function with .setState method to pass in an array of objcets to this.state.title
@@ -17,6 +19,7 @@ class App extends Component {
         this.setState({ title: data.features })
         console.log(data)
       })
+      // catach error by console.log
       .catch(err=> console.log(err))
   }
 

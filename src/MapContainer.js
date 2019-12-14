@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Marker from './Marker';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
@@ -8,10 +9,9 @@ const mapStyles = {
 };
 
 class MapContainer extends Component {
-
 	constructor(props) {
+    
     super(props);
-
     this.state = {
       stores: [{lat: 47.49855629475769, lng: -122.14184416996333},
               {latitude: 47.359423, longitude: -122.021071},
