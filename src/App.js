@@ -1,35 +1,41 @@
 import React, { Component } from 'react';
 import MapContainer from './MapContainer'
+import { CLIENT_URL } from './constants.js';
+import Quakes from './Quakes';
 
 class App extends Component {
-
   state = {
-    title: []
+    earthquakes: []
   }
 
   componentDidMount() {
-    fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson')
+    fetch(CLIENT_URL)
       //parse into json
       .then(response=> response.json())
       //Use arrow function with .setState method to pass in an array of objcets to this.state.title
       // before we passed in an array of name as STRING
       .then(data=> {
-        this.setState({ title: data.features })
+        // let element = document.createElement('p');
+        // let text = document.createTextNode(data.features.properties.title);
+        // element.appendChild(text);
+        // document.getElementById("info").appendChild(element); 
         console.log(data)
+        this.setState({ earthquakes: data.features })
       })
       .catch(err=> console.log(err))
   }
+
 
   render() {
     console.log(this.state.title)
     return (
       <div className="app">
         <div className="mapContainer">
-          <MapContainer detail = {this.state.title} />
+          <MapContainer detail = {this.state.earthquakes} />
         </div>
         <div className="quakeContainer">
           <h1>Earthquakes from the past week: </h1>
-          ...put Quakes Component here...
+          <Quakes data={this.state.earthquakes}/>
         </div>
       </div>
     );
