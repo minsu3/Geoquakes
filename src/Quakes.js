@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
-import Marker from './Marker';
+import React, { Component } from "react";
 
-class Quakes extends Component {
-    render() {
-        return(
-            <div> 
-                <h1>hi</h1>
-            </div>
-        )
-    }
-}
+let Quakes = props => {
+    return (
+        <div>
+            <ul>
+                {props.data.map((item, i) => {
+                    console.log(this.props)
+                    return <li key={i}> {item.properties.title}</li>;
+                })}
+            </ul>
+        </div>
+        
+    );
+};
 
 export default Quakes;
