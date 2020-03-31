@@ -6,7 +6,7 @@ let Quakes = props => {
             <ul>
                 {props.data.map((item, i) => {
                     console.log(this.props)
-                    return <li key={i}> {item.properties.title}</li>;
+                    return <li key={i} className="list"> {item.properties.title}</li>;
                 })}
             </ul>
         </div>

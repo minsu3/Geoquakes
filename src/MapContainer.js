@@ -3,13 +3,16 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import img from './earthquake.png'
 
 const mapStyles = {
+  position: 'absolute',
+  top: '30px',
+  left: '-80px',
   width: '30%',
-  height: '80%',
+  height: '90%',
 };
 
 let image = "./earthquake.png";
 
-class Maps extends Component {
+class MapContainer extends Component {
 	constructor(props) {
     super(props);
     this.state = {
@@ -36,7 +39,7 @@ class Maps extends Component {
     return (
       <Map className='mapStyles'
         google={this.props.google}
-        zoom={3}
+        zoom={4}
         style={mapStyles}
         initialCenter={{ lat: 47.444, lng: -122.176 }}
       >
@@ -49,7 +52,7 @@ class Maps extends Component {
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg'
-})(Maps);
+})(MapContainer);
 
 
 
